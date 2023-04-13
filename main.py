@@ -217,7 +217,7 @@ class Window(tk.Tk):
         siteName = itemDic['tags'][0]
         #print(itemDic['tags']) --> itemDic['tag']是一個list,所以加[0]是取出list裡面的第一個值
         #print(siteName) -->是值，不是list
-        for item in self.area_data:
+        for item in datasource.data_list:
             if siteName == item['sna']:
                 selected_data = item
                 break #不寫也可以，但因為結果就是只有一筆，寫break才不會跑很多次浪費
